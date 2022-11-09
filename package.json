@@ -14,6 +14,23 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"walkthroughs": [
+			{
+				"id": "sample",
+				"title": "Sample",
+				"description": "A sample walkthrough",
+				"steps": [
+					{
+						"id": "runcommand",
+						"title": "Run Command",
+						"description": "This step will run a command and check off once it has been run.\n[Run Command](command:getting-started-sample.runCommand)",
+						"media": {
+							"markdown": "Hello world"
+						}
+					}
+				]
+			}
+		],
 		"commands": [
 			{
 				"command": "uftsubaddingenerator.helloWorld",
